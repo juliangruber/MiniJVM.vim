@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.mjvm, *.minijvm set filetype=minijvm
+au BufNewFile,BufRead *.mjvm, *.minijvm, *.jvm set filetype=minijvm
