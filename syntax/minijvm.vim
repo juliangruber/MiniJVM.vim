@@ -8,6 +8,10 @@ syn case ignore
 
 syn region jvmComment start=";" end="$"
 hi def link jvmComment Comment
+
+syn match jvmMarker "\<[A-Z]*:\>"
+hi def link jvmMarker Tag
+
 syn match decNumber "\<[0-9]*\>"
 hi def link decNumber Number
 
