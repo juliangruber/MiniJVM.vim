@@ -7,7 +7,9 @@ endif
 syn case ignore
 
 syn region jvmComment start=";" end="$"
+hi def link jvmComment Comment
 syn match decNumber "\<[0-9]*\>"
+hi def link decNumber Number
 
 syn match jvmMemory /\<\%(ALLOC\|READ\|WRITE\|LOAD\|STORE\|CONST\)\>/
 hi def link jvmMemory Function
@@ -21,7 +23,7 @@ hi def link jvmStackComp Operator
 syn match jvmStackOps /\<\%(ADD\|SUB\|MUL\|DIV\|MOD\|NOT\|AND\|OR\|NEG\)\>/
 hi def link jvmStackOps Keyword
 
-syn math jvmDirective /\<\%(HALT\|JUMP\|FJUMP\)\>/
+syn match jvmDirective /\<\%(HALT\|JUMP\|FJUMP\)\>/
 hi def link jvmDirective Special
 
 syn case match
