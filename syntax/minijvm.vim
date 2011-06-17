@@ -12,7 +12,7 @@ syn match decNumber "\<[0-9]*\>"
 hi def link decNumber Number
 
 syn match jvmMemory /\<\%(ALLOC\|READ\|WRITE\|LOAD\|STORE\|CONST\)\>/
-hi def link jvmMemory Function
+hi def link jvmMemory Special
 
 syn match jvmBoolean /\<\%(TRUE\|FALSE\)\>/
 hi def link jvmBoolean Boolean
@@ -24,7 +24,7 @@ syn match jvmStackOps /\<\%(ADD\|SUB\|MUL\|DIV\|MOD\|NOT\|AND\|OR\|NEG\)\>/
 hi def link jvmStackOps Keyword
 
 syn match jvmDirective /\<\%(HALT\|JUMP\|FJUMP\)\>/
-hi def link jvmDirective Special
+hi def link jvmDirective Function
 
 syn case match
 let b:current_syntax = "minijvm"
