@@ -10,7 +10,7 @@ syn region jvmComment start=";" end="$"
 hi def link jvmComment Comment
 
 syn match jvmMarker "^[a-z_?.][a-z0-9_?.$]*[:]*$" 
-hi def link jvmMarker Error
+hi def link jvmMarker Tag
 
 syn match decNumber "\<[0-9]*\>"
 hi def link decNumber Number
