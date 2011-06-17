@@ -21,7 +21,7 @@ syn match jvmStackComp /\<\%(LESS\|LEQ\|EQ\|NEQ\)\>/
 hi def link jvmStackComp Special
 
 syn match jvmStackOps /\<\%(ADD\|SUB\|MUL\|DIV\|MOD\|NOT\|AND\|OR\|NEG\)\>/
-hi def link jvmStackOps Keyword
+hi def link jvmStackOps Macro
 
 syn match jvmDirective /\<\%(HALT\|JUMP\|FJUMP\)\>/
 hi def link jvmDirective Function
