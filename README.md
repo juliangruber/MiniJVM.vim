@@ -1,6 +1,8 @@
 MiniJVM syntax for Vim
 ======================
 
+    At the moment you still have to run :set filetype=minijvm on every file you edit, as the autocommand for filetypedetection is not working yet. Any suggestions?
+
 Installation
 ------------
 
@@ -14,6 +16,14 @@ Or if you're managing your .vim folder via git already, add it as a submodule li
     
     cd ~/.vim
     git submodule add git://github.com/juliangruber/MiniJVM.vim.git bundle/MiniJVM.vim
+
+However if you're not yet using pathogen (which you definitely should!) then insall by copying individual files:
+
+    cp ftdetect/* ~/.vim/ftdetect/
+    cp indent/* ~/.vim/indent/
+    cp syntax/* ~/.vim/syntax/
+
+Also create those folders before copying if they don't yet exist on your drive.
 
 Usage
 -----
