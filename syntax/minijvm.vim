@@ -12,13 +12,13 @@ syn match decNumber "\<[0-9]*\>"
 hi def link decNumber Number
 
 syn match jvmMemory /\<\%(ALLOC\|READ\|WRITE\|LOAD\|STORE\|CONST\)\>/
-hi def link jvmMemory Special
+hi def link jvmMemory Operator
 
 syn match jvmBoolean /\<\%(TRUE\|FALSE\)\>/
 hi def link jvmBoolean Boolean
 
 syn match jvmStackComp /\<\%(LESS\|LEQ\|EQ\|NEQ\)\>/
-hi def link jvmStackComp Operator
+hi def link jvmStackComp Special
 
 syn match jvmStackOps /\<\%(ADD\|SUB\|MUL\|DIV\|MOD\|NOT\|AND\|OR\|NEG\)\>/
 hi def link jvmStackOps Keyword
